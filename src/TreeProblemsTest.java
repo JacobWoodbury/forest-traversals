@@ -38,7 +38,7 @@ public class TreeProblemsTest {
   public void testPostOrderNode_SingleNode() {
     Node<Integer> single = new Node<>(42);
     TreeProblems.postOrder(single);
-    assertEquals("A single-node tree should print its value", "42\n", baos.toString());
+    assertEquals("A single-node tree should print its value", "42" + System.lineSeparator(), baos.toString());
   }
 
   @Test
